@@ -10,6 +10,8 @@ body{
     font-weight: 600;
 }
 
+
+/* header */
 #header{
     display: grid;
     margin-top: 50px;
@@ -67,6 +69,8 @@ body{
     font-size: 20px;
 }
 
+
+
 .lay{
     background-color:rgba(249, 227, 168, 0.7);
     width: 100%;
@@ -74,6 +78,10 @@ body{
     padding: 5px;
     box-sizing: border-box;
 }
+
+/* hero end */
+
+/* navigasi */
 
 nav{
     height: 35px;
@@ -84,6 +92,15 @@ nav{
     box-sizing: border-box;
     color: rgb(7, 7, 7);
 
+}
+
+nav p{
+    font-style: italic;
+    padding-left: 10px;
+    font-size: 35px;
+    color: rgb(65, 62, 65);
+    font-family: 'Chewy', cursive;
+    font-weight: 550;
 }
 
 nav ul{
@@ -114,16 +131,19 @@ nav ul li a:hover{
     box-sizing: border-box;
     color: wheat;
 }
-nav p{
-    font-style: italic;
-    padding-left: 10px;
-    font-size: 35px;
-    color: rgb(65, 62, 65);
-    font-family: 'Chewy', cursive;
-    font-weight: 550;
+
+.menu{
+    opacity: 0;
 }
 
-main{
+.close{
+    opacity: 0;
+}
+
+/* navigasi end  */
+
+/* bagian service  */
+#servis{
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: rgb(243, 214, 184);
@@ -171,6 +191,7 @@ main{
     box-sizing: border-box;
     opacity: 0;
     transition: 1.3s;
+    z-index: 10;
 }
 
 .popup p{
@@ -192,13 +213,18 @@ main{
     font-weight: 800;
 }
 
+/* service end  */
+
+/* bagian galeri  */
+.gallery{
+    margin-top: 100px;
+    background-color: rgb(243, 214, 184);
+    padding: 50px 0;
+}
 .galeri{
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: repeat(auto-fit,minmax(24%,1fr));
     gap: 5px;
-    /* border: rgb(100, 96, 96) double 3px; */
-    /* box-shadow: 3px 3px 3px gray; */
     padding: 20px;
 }
 
@@ -210,9 +236,60 @@ img{
     width: 100%;
 }
 
+/* galeri end  */
+
+/* produk */
+
+#product{
+    margin: 50px auto;
+}
+#product ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr) );
+    list-style: none;
+    gap: 15px;
+    box-sizing: border-box;
+
+}
+
+.tempat{
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px double rgb(155, 155, 155);
+    background-color: rgb(177, 218, 236);
+    border-radius: 25px ;
+    overflow: hidden;
+}
+
+.tempat img{
+    width: 50%;
+    margin: 0 auto 10px;
+    border-radius: 200px;
+    border-right: 5px solid black ;
+    box-sizing: border-box;
+}
+
+.tempat h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tempat p{
+    background-color: rgb(135, 222, 181);
+    text-align: center;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* footer  */
+
 footer{
     margin-top: 50px;
-    background-color: rgb(243, 214, 184);
     padding: 50px 40px 0px;
     font-weight: 400;
 }
@@ -239,9 +316,14 @@ footer{
     margin: 50px;
     margin-bottom: 0;
     background-color: rgb(0, 0, 0);
-    color: wheat;
+    color: rgb(253, 253, 253);
     padding: 10px;
+    font-size: 20px;
 }
+
+/* footer end  */
+
+/* bagian judul per section  */
 
 .subjudul{
     position: relative;
@@ -281,12 +363,6 @@ footer{
     border-radius: 5px;
 }
 
-.menu{
-    opacity: 0;
-}
-
-
-
 @media screen and (max-width:1200px) {
     nav{
         order: -1;
@@ -296,6 +372,10 @@ footer{
 }
 
 @media screen and (max-width:576px) {
+    body{
+        margin-top: 0;
+    }
+
     .hero{
         grid-template-areas: 
         'sampul sampul'
@@ -328,10 +408,6 @@ footer{
         right: 10px;
     }
 
-    body{
-        margin-top: 0;
-    }
-
     nav{
         background-color: rgb(248, 178, 166);
         grid-template-columns: 1fr;
@@ -358,7 +434,6 @@ footer{
         gap: 0;
         background-color: rgba(243, 168, 155, 0.908);
         opacity: 0;
-        z-index: 10;
     }
     nav p{
         font-size: 22px;
@@ -369,11 +444,31 @@ footer{
         background:none;
     }
 
+
+    footer{
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .medsos{
+        flex-wrap: wrap;
+    }
+
+    .sosialmedia{
+        text-align: end;
+        margin-top: 20px;
+    }
+
+    #copy{
+        width: 100%;
+        margin:20px 0;
+        box-sizing: border-box;
+    }
+
     .close{
         position: fixed;
         width: 30px;
         height: 30px;
-        /* background-color: rgb(119, 31, 119); */
         padding: 0;
         right: 20px;
         top: 2px;
@@ -388,31 +483,15 @@ footer{
     }
     .aktif{
         opacity: 1;
+        z-index: 11;
     }
     
     .hilang{
         opacity: 0;
-    }
+    } 
 
-    .medsos{
-        flex-wrap: wrap;
+    .galeri{
+        grid-template-columns: 1fr 1fr;
     }
-
-    .sosialmedia{
-        text-align: end;
-        margin-top: 20px;
-    }
-
-    footer{
-        padding: 0;
-        padding-top: 50px;
-    }
-
-    #copy{
-        width: 100%;
-        margin:20px 0;
-        box-sizing: border-box;
-    }
-    
     
 }
