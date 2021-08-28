@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Josefin+Slab:wght@200&display=swap" rel="stylesheet"> 
+    <title>Toko Es Krim</title>
+</head>
+<body>
+    <section id="header">
+        <div class="hero">
+            <div class="sampul">
+                <h1>My Pink~Ice</h1>
+                <p>~Find Out Your comfort~</p>
+            </div>
+            <div class="barang1">
+                <div class="lay">
+                    <h2>IDR. 32k</h2>
+                    <p>-Love Story Ice-</p>
+                </div>
+            </div>
+            <div class="barang2">
+                <div class="lay">
+                    <h2>IDR. 45k</h2>
+                    <p>-Yummy Ice-</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <p>My PINK Ice</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#servis">Service</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="menu">
+                <!-- <img src="menu.png" alt=""> -->
+            </div>
+            <div class="close">
+                <p>X</p>
+            </div>
+        </nav>
+        
+    </section>  
+
+
+    <main id="servis">
+        <h2  class="subjudul">Service</h2>
+        <div class="service">
+       
+            <div class='produk'>
+                <p>🛍️</p>
+                <h3>Shopping</h3>
+                <div class="popup">
+                    <h3>Shopping</h3>
+                    <hr>
+                    <p>Kami menyediakan berbagai jenis ice cream yang berkualitas dengan rasa yang menakjupkan untuk anda coba.
+                        Pilih varian rasa yang kalian inginkan dan rasakan kenikmatannya.</p>
+                </div>
+                
+            </div>
+            <div class='produk'>
+                <p>🫕</p>
+                <h3>Ice Cream Maker Course</h3>
+                <div class="popup">
+                    <h3>Ice Cream Maker Course</h3>
+                    <hr/>
+                    <p>Kami menyediakan layanan bagi anda yang tertarik mempelajari bagaimana membuat ice cream yang berkualitasbaik secara
+                        online maupun offline.
+                    </p>
+                </div>
+            </div>
+            <div class='produk'>
+                <p>📞</p>
+                <h3>Delivery</h3>
+                <div class="popup">
+                    <h3>Delivery</h3>
+                    <hr>
+                    <p>Kami menyediakan layanan pembelian melalui drive through dan delevery untuk kenyamanan berbelanja Anda. Silakan 
+                        pesan melalui website kami dan pilih driver terdekat.
+                    </p>
+                </div>
+            </div>
+            <div class='produk'>
+                <p>🤝🏻</p>
+                <h3>Sponsorship</h3>
+                <div class="popup">
+                    <h3>Sponsorship</h3>
+                    <hr>
+                    <p>Kami menyediakan blayanan bagi anda yang tertarik untuk menjadikan kami patner bisnis. Silakan contact kami melalui 
+                        no yang tertera.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <h2 id="gallery" class="subjudul">Gallery</h2>
+    <ul class="galeri">
+        <li><img src="1.jpeg" alt=""></li>
+        <li><img src="2.jpeg" alt=""></li>
+        <li><img src="3.jpeg" alt=""></li>
+        <li><img src="4.jpeg" alt=""></li>
+        <li><img src="5.jpeg" alt=""></li>
+        <li><img src="gambar6.jpeg" alt=""></li>
+        <li><img src="7.jpeg" alt=""></li>
+        <li><img src="8.jpeg" alt=""></li>
+        <li><img src="6.jpeg" alt=""></li>
+    </ul>
+
+
+    <footer>
+        <h2 class="subjudul">Contact Us</h2>
+        <div class="medsos">
+            <div class="alamat">
+                <p>Jl.Kebon Agung No.59, Minggir, Sleman,DI Yogyakarta</p>
+                <p>Open 6 am : 9 pm Closed</p>
+            </div>
+            <div class="sosialmedia">
+                <p>Instagram : @vinput31</p>
+                <p>Twitter : @vinsa31</p>
+                <p>WhatApp : +6288215723031</p>
+                <p>email : vivinsativa1@gmail.com</p>
+            </div>
+
+        </div>
+        <div class="label">
+            <p>My PINK Ice</p>
+            <p>~Find Out Your comfort~</p>
+        </div>
+        <p id="copy">copyright.2021 my PINK ice</p>
+        
+    </footer>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const nav = document.querySelector("nav ul")
+        const tutup = document.querySelector(".close")
+
+        menu.addEventListener('click',function(){
+            menu.classList.toggle('hilang')
+            tutup.classList.toggle('aktif')
+            nav.classList.toggle('aktif')
+
+        })
+    </script>
+    
+</body>
+</html>
